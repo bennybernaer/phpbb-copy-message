@@ -1,0 +1,8 @@
+services:
+    bennybernaer.copymessage.listener:
+        class: bennybernaer\copymessage\event\listener
+        arguments:
+            - '@template'
+            - '@user'
+        tags:
+            - { name: event.listener }

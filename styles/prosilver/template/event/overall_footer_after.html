@@ -1,0 +1,10 @@
+{% if S_COPY_MESSAGE_TEXT %}
+<div id="copy-message-template" hidden>
+    <button type="button" class="copy-message-button" aria-label="{{ lang('COPY_MESSAGE_TEXT') }}" title="{{ lang('COPY_MESSAGE_TEXT') }}">
+        <span class="copy-message-icon copy-message-icon-copy">{{ Icon('font', 'clone', '', true, 'far') }}</span>
+        <span class="copy-message-icon copy-message-icon-copied" hidden>{{ Icon('font', 'check', '', true) }}</span>
+    </button>
+</div>
+<div id="copy-message-config" hidden data-copy-label="{{ lang('COPY_MESSAGE_TEXT') }}" data-copied-label="{{ lang('MESSAGE_TEXT_COPIED') }}"></div>
+<script src="{{ ROOT_PATH }}ext/bennybernaer/copymessage/styles/prosilver/template/js/copy-message.js?assets_version={{ T_ASSETS_VERSION }}"></script>
+{% endif %}
