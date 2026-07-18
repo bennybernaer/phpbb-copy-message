@@ -1,0 +1,22 @@
+{
+    "name": "bennybernaer/copymessage",
+    "type": "phpbb-extension",
+    "description": "Adds a one-click copy button to phpBB message editors in prosilver.",
+    "license": "GPL-2.0-only",
+    "authors": [
+        {
+            "name": "Benny Bernaer"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "composer/installers": "^2.0"
+    },
+    "extra": {
+        "display-name": "Copy Message Text",
+        "soft-require": {
+            "phpbb/phpbb": ">=4.0.0,<4.1.0@dev"
+        }
+    },
+    "version": "1.0.0"
+}
